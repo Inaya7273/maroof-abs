@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Schedule</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Your Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    </br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="filter-section">
+                    <label for="genre-filter">Filter by Genre:</label>
+                    <select id="genre-filter" multiple>
+                        <option value="Action">Action</option>
+                        <option value="Comedy">Comedy</option>
+                        <option value="Drama">Drama</option>
+                        <!-- Add more genres as needed -->
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="search-section">
+                    <label for="movie-search">Search:</label>
+                    <input type="text" id="movie-search" placeholder="Search for a movie...">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ul class="movie-list">
+        <li class="movie" data-genre="Action">
+            <h2 class="title">Movie 1</h2>
+            <img src="img/movie1.jpeg" alt="Movie 1 Poster" class="poster">
+            <p class="genre">Action</p>
+            <p class="rating">PG-13</p>
+            <p class="year">2020</p>
+            <p class="metacritic">78</p>
+            <p class="runtime">120 mins</p>
+        </li>
+
+        <!-- Add more movie entries with the same structure -->
+
+        <li class="movie" data-genre="Comedy">
+            <h2 class="title">Movie 4</h2>
+            <img src="img/movie1.jpeg" alt="Movie 2 Poster" class="poster">
+            <p class="genre">Comedy</p>
+            <p class="rating">R</p>
+            <p class="year">2019</p>
+            <p class="metacritic">85</p>
+            <p class="runtime">100 mins</p>
+        </li>
+    </ul>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
